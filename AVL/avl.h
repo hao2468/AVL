@@ -219,7 +219,7 @@ void AVL<Comparable>::randomTree(long size,Node * & t)
 }
 
 /*
-	检索树是否已存储目标内容，右值引用版本
+	检索树是否已存储目标内容，左值引用版本
 */
 template<typename Comparable>
 bool AVL<Comparable>::isin(const Comparable & c, Node * & t)const
@@ -247,7 +247,7 @@ bool AVL<Comparable>::isin(const Comparable & c, Node * & t)const
 }
 
 /*
-	检索树是否已存储目标内容，左值引用版本
+	检索树是否已存储目标内容，右值引用版本
 */
 template<typename Comparable>
 bool AVL<Comparable>::isin(Comparable && c, Node * & t)
@@ -313,7 +313,7 @@ void AVL<Comparable>::empty(Node * & t)
 }
 
 /*
-	向树插入目标内容，右值引用版本
+	向树插入目标内容，左值引用版本
 */
 template<typename Comparable>
 void AVL<Comparable>::insert(const Comparable & c, Node * & t)
@@ -345,7 +345,7 @@ void AVL<Comparable>::insert(const Comparable & c, Node * & t)
 }
 
 /*
-	向树插入目标内容，左值引用版本
+	向树插入目标内容，右值引用版本
 */
 template<typename Comparable>
 void AVL<Comparable>::insert(Comparable && c, Node * & t)
@@ -377,7 +377,7 @@ void AVL<Comparable>::insert(Comparable && c, Node * & t)
 }
 
 /*
-	删除树中的指定内容，右值引用版本
+	删除树中的指定内容，左值引用版本
 */
 template<typename Comparable>
 void AVL<Comparable>::remove(const Comparable & c, Node * & t)
@@ -412,7 +412,7 @@ void AVL<Comparable>::remove(const Comparable & c, Node * & t)
 }
 
 /*
-	删除树中的指定内容，左值引用版本
+	删除树中的指定内容，右值引用版本
 */
 template<typename Comparable>
 void AVL<Comparable>::remove(Comparable && c, Node * & t)
